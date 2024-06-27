@@ -1,0 +1,359 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #6a1b9a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.profile_name {
+  font-size: 24px;
+}
+
+.contact_info {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.contact_info i {
+  margin-right: 10px;
+}
+
+.topdiv {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.topdiv a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topdiv a:hover {
+  text-decoration: underline;
+}
+
+/* About Me */
+#about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me .profile_image {
+  border-radius: 0%;
+  max-width: 300px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+#about-me h1 {
+  font-size: 40px;
+  color: #6a1b9a;
+}
+
+#about-me p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Skills */
+#skills {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 40px;
+}
+
+#skills h2 {
+  font-size: 28px;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.all_skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.skill h6 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.skill p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Projects */
+#projects {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#projects h2 {
+  font-size: 28px;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  color: #6a1b9a;
+}
+
+.project-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.project-card ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.project-card a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Recommendations */
+#recommendations {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#recommendations h2 {
+  font-size: 28px;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+.all_recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.recommendation {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.recommendation span {
+  color: #6a1b9a;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Recommendation Form */
+#contact {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+#contact fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#contact legend {
+  font-size: 24px;
+  color: #6a1b9a;
+  padding: 0 10px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#contact button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #4a148c;
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #6a1b9a;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  transition: background-color 0.3s;
+  border: 4px solid white; /* Adding white border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+  width: 20px; /* Ensuring consistent width */
+  height: 20px; /* Ensuring consistent height */
+  display: flex; /* Flexbox for centering */
+  align-items: center; /* Centering vertically */
+  justify-content: center; /* Centering horizontally */
+}
+
+.iconbutton a {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.iconbutton:hover {
+  background-color: #4a148c;
+}
+
+/* Form Pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8bcf0;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.popup img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4a148c;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

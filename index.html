@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A.P.N.K. ABEYSEKARA - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <div class="profile_name">
+                <b>A.P.N.K. ABEYSEKARA</b>
+                <div class="contact_info">
+                    <i class="fas fa-envelope"></i> nimnadakavishwarank.ugc@gmail.com
+                </div>
+                <div class="contact_info">
+                    <i class="fas fa-phone"></i> +94762320830
+                </div>
+            </div>
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+        <div>
+            <img src="html_finalprojimages/profile_cc.webp" class="profile_image" alt="Profile Picture">
+        </div>
+        <div>
+            <h1>
+                Hi, I'm A.P.N.K. ABEYSEKARA! &nbsp;<img src="html_finalprojimages/waving-hand.png" width="40px" alt="Waving Hand">
+            </h1>
+            <p>
+                I am a University Undergraduate at University of Ruhuna, and doing Computer Science Degree Program.
+                I am passionate about coding and technology. In my free time, I enjoy working on various projects to enhance my skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="all_skills">
+            <div class="skill html">
+                <i class="fab fa-html5"></i>
+                <h6>HTML</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill css">
+                <i class="fab fa-css3-alt"></i>
+                <h6>CSS</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill js">
+                <i class="fab fa-js"></i>
+                <h6>JavaScript</h6>
+                <p>1 year experience</p>
+            </div>
+            <div class="skill java">
+                <i class="fab fa-java"></i>
+                <h6>Java</h6>
+                <p>6 months experience</p>
+            </div>
+            <div class="skill mysql">
+                <i class="fas fa-database"></i>
+                <h6>MySQL</h6>
+                <p>6 months experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Calculator Project</h3>
+                <ul>
+                  <li>I have developed a Calculator Project with the peer team called CSB Developments. This project involved creating a user-friendly, responsive calculator application that supports basic arithmetic operations. We implemented advanced error handling and ensured the application provided accurate results consistently. Our focus was on delivering a seamless user experience, which included a modern interface and intuitive controls. The project was completed using HTML, CSS, and JavaScript, and we also incorporated unit tests to ensure the reliability of our codebase.</li>
+                </ul>
+                <a href="https://github.com/nimnada/calculator-project" target="_blank">GitHub Repository</a>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Electronic Device Management System (Hakmana Pradeshiya Sabha)</h3>
+                <ul>
+                  <li>Developed an Electronic Device Management Standalone System with a peer group CodeDrinkers. This system was designed to streamline the management of electronic devices within the Hakmana Pradeshiya Sabha. It included functionalities for tracking device inventory, maintenance schedules, and usage logs. The project required the integration of various hardware interfaces and software modules to ensure real-time data synchronization and accurate reporting. We employed Java and MySQL for backend development, ensuring data security and efficient processing, while the front-end was developed using modern web technologies to enhance user interaction.</li>
+                </ul>
+                <a href="https://github.com/nimnada/device-management-system" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+                <span>&#8220;</span>
+                A.P.N.K. ABEYSEKARA is a dedicated and hardworking individual with a passion for technology.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                An excellent team player who consistently delivers high-quality work on time.
+                <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+                <span>&#8220;</span>
+                A brilliant problem solver who always comes up with innovative solutions.
+                <span>&#8221;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+        <div class="flex_center">
+            <fieldset>
+                <legend class="introduction">Leave a Recommendation</legend>
+                <input type="text" placeholder="Name (Optional)"> <br>
+                <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                <div class="flex_center">
+                    <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div class="iconbutton">
+        <a href="#top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Form Pop-up -->
+    <div class="popup" id="popup" class="flex_center">
+        <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark">
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">OK</button>
+    </div>
+
+    <footer>
+        &#169; This Portfolio Belongs to A.P.N.K. ABEYSEKARA
+    </footer>
+</body>
+</html>
